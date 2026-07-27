@@ -10,8 +10,8 @@ This repository contains drop-in skills for [OpenCode](https://opencode.ai) — 
 
 | Skill | Description | Use Case |
 |-------|-------------|----------|
-| **study-programming** | Interactive programming tutor with spaced repetition, Socratic exercises, and progress tracking — teaches in Egyptian Arabic with English technical terms | `"علمني Python"`, `"I want to learn React"` |
-| **convert-to-mind-map** | Converts Markdown notes into interactive Obsidian Markmind visual maps | `"حوّل الملف ده لـ mind map"` |
+| **study-programming** | Interactive programming tutor with spaced repetition, Socratic exercises, and progress tracking — teaches in Egyptian Arabic with English technical terms | `"teach me Python"`, `"I want to learn React"` |
+| **convert-to-mind-map** | Converts Markdown notes into interactive Obsidian Markmind visual maps | `"convert this folder to a mind map"` |
 
 ---
 
@@ -20,7 +20,7 @@ This repository contains drop-in skills for [OpenCode](https://opencode.ai) — 
 A full learning system that takes a learner from absolute zero to professional-level mastery of any programming language, framework, or tech topic.
 
 **Features:**
-- 3-level structured roadmap (Beginner → Intermediate → Advanced)
+- 3-level structured roadmap (Beginner -> Intermediate -> Advanced)
 - Lesson-by-lesson teaching in Egyptian Arabic mixed with English technical terms
 - Mandatory exercises after every lesson with Socratic hinting (no answer-dropping)
 - Confidence scoring, misconception logging, and progress tracking in a single file
