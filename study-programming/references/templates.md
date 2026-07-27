@@ -4,7 +4,7 @@ Copy these structures exactly (fill in the placeholders). All files use Obsidian
 
 ---
 
-## roadmap.md
+## <topic-slug>-roadmap.md
 
 ```markdown
 ---
@@ -23,30 +23,30 @@ aliases: [<English Name>, <optional other alias>]
 ---
 
 ## المستوى الأول: مبتدئ (Beginner)
-- [ ] [[01-<slug>|<اسم الدرس بالعربي/إنجليزي>]]
-- [ ] [[02-<slug>|...]]
+- [ ] [[<topic-slug>-01-<lesson-slug>|<اسم الدرس بالعربي/إنجليزي>]]
+- [ ] [[<topic-slug>-02-<lesson-slug>|...]]
 
 ---
 
 ## المستوى الثاني: متوسط (Intermediate)
-- [ ] [[0N-<slug>|...]]
+- [ ] [[<topic-slug>-0N-<lesson-slug>|...]]
 
 ---
 
 ## المستوى الثالث: متقدم (Advanced)
-- [ ] [[0N-<slug>|...]]
+- [ ] [[<topic-slug>-0N-<lesson-slug>|...]]
 
 ---
 
-## Progress
-See [[progress]] for current status.
+## التقدم
+شوف [[<topic-slug>-progress]] عشان تعرف وصلت فين بالظبط.
 ```
 
-Tick the checkbox (`- [x]`) when a lesson is completed — this mirrors `progress.md` visually inside Obsidian's own list/tag panes.
+Tick the checkbox (`- [x]`) when a lesson is completed — this mirrors `<topic-slug>-progress.md` visually inside Obsidian's own list/tag panes.
 
 ---
 
-## lessons/NN-slug.md
+## lessons/<topic-slug>-NN-<lesson-slug>.md
 
 ```markdown
 ---
@@ -56,8 +56,8 @@ level: beginner   # allowed values: beginner, intermediate, advanced
 status: current    # allowed values: current, completed
 tags: [<topic-slug>, lesson, beginner]   # third tag matches the level field above
 aliases: [<optional alternate term, e.g. "Promises" for an async/await lesson>]
-roadmap: "[[roadmap]]"
-exercise: "[[NN-slug-exercise]]"
+roadmap: "[[<topic-slug>-roadmap]]"
+exercise: "[[<topic-slug>-NN-<lesson-slug>-exercise]]"
 ---
 
 # الدرس NN: <عنوان الدرس بالعربي والإنجليزي لو المصطلح إنجليزي، زي "الدرس 3: الـ Array Methods">
@@ -80,7 +80,7 @@ function example() {
 
 ---
 
-<!-- استخدم Mermaid بس لو المفهوم فعلاً هيكلي/تدفقي (flow-based)، مش في كل درس -->
+<!-- استخدم Mermaid بس لو فيه ضرورة حقيقية (مفهوم مستحيل يتشرح كويس بدونه، زي flow متعدد الخطوات أو state machine) — مش افتراضي، أغلب الدروس معندهاش لازمة له -->
 ```mermaid
 flowchart LR
   A[Input] --> B[Process]
@@ -101,18 +101,18 @@ flowchart LR
 
 ---
 
-جاهز تحل التمرين؟ [[NN-slug-exercise|التمرين هنا]]
+جاهز تحل التمرين؟ [[<topic-slug>-NN-<lesson-slug>-exercise|التمرين هنا]]
 ```
 
-Use `^key-concept` block references only for the specific line/definition that a later lesson or a spaced-repetition review might need to point back to precisely (link to it via `[[NN-slug#^key-concept]]`). Don't add block IDs to every paragraph.
+Use `^key-concept` block references only for the specific line/definition that a later lesson or a spaced-repetition review might need to point back to precisely (link to it via `[[<topic-slug>-NN-<lesson-slug>#^key-concept]]`). Don't add block IDs to every paragraph.
 
 ---
 
-## exercises/NN-slug-exercise.md
+## exercises/<topic-slug>-NN-<lesson-slug>-exercise.md
 
 ```markdown
 ---
-lesson: "[[NN-slug]]"
+lesson: "[[<topic-slug>-NN-<lesson-slug>]]"
 status: pending   # allowed values: pending, passed, retrying
 attempts: 0
 tags: [<topic-slug>, exercise]
@@ -130,14 +130,31 @@ tags: [<topic-slug>, exercise]
 
 ---
 
-## Notes
-> [!question] هينت (يظهر بس لو المستخدم اتعثر)
-> (hints/misconceptions logged here get appended after attempts, not before)
-```
+## إجابتك (Your Answer)
+
+<!-- اكتب إجابتك هنا -->
+
+
 
 ---
 
-## progress.md
+## ملاحظات (Notes)
+> [!question] هينت (يظهر بس لو المستخدم اتعثر)
+> (hints/misconceptions logged here get appended after attempts, not before)
+
+---
+
+## الحل المرجعي (Answer Key)
+
+> [!success]- اضغط هنا لو عايز تشوف الحل بعد ما تحل
+> <الحل الكامل والصحيح للتمرين، بالكود كامل لو تمرين كود — دايماً إنجليزي زي أي كود تاني>
+```
+
+The `[!success]-` callout (note the trailing `-`) renders **collapsed/closed by default** in Obsidian — the solution exists in the file for reference, but isn't visible until the learner deliberately expands it themselves. This is different from revealing the solution in chat, which remains forbidden. Fill in the real, correct, complete solution here when you create the exercise file — don't leave it as a placeholder.
+
+---
+
+## <topic-slug>-progress.md
 
 ```markdown
 ---
@@ -149,7 +166,7 @@ tags: [<topic-slug>, progress]
 
 # التقدم في <الاسم بالعربي> (<English Name>)
 
-**الدرس الحالي:** [[NN-slug|NN - اسم الدرس]]
+**الدرس الحالي:** [[<topic-slug>-NN-<lesson-slug>|NN - اسم الدرس]]
 **آخر تحديث:** <YYYY-MM-DD>
 
 ---
@@ -157,14 +174,14 @@ tags: [<topic-slug>, progress]
 ## الدروس المكتملة
 | # | الدرس | تاريخ الإنجاز | محاولات التمرين |
 |---|-------|----------------|-------------------|
-| 01 | [[01-slug]] | YYYY-MM-DD | 1 |
+| 01 | [[<topic-slug>-01-<lesson-slug>]] | YYYY-MM-DD | 1 |
 
 ---
 
 ## جدول المراجعة (Spaced Repetition)
 | الدرس | آخر مراجعة | تاريخ المراجعة الجاية | الفترة الحالية |
 |-------|-------------|--------------------------|------------------|
-| [[01-slug]] | YYYY-MM-DD | YYYY-MM-DD | 3 days |
+| [[<topic-slug>-01-<lesson-slug>]] | YYYY-MM-DD | YYYY-MM-DD | 3 days |
 
 Interval progression on success: 1d -> 3d -> 7d -> 14d -> 30d
 On failed recall: reset to 1d.
@@ -174,7 +191,7 @@ On failed recall: reset to 1d.
 ## سجل نقاط الضعف (Misconceptions Log)
 | التاريخ | الدرس | الالتباس |
 |---------|--------|-----------|
-| YYYY-MM-DD | [[01-slug]] | وصف قصير للمفهوم اللي اتلخبط فيه |
+| YYYY-MM-DD | [[<topic-slug>-01-<lesson-slug>]] | وصف قصير للمفهوم اللي اتلخبط فيه |
 ```
 
 ---
