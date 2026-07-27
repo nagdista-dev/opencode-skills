@@ -23,18 +23,21 @@ aliases: [<English Name>, <optional other alias>]
 ---
 
 ## المستوى الأول: مبتدئ (Beginner)
-- [ ] [[<topic-slug>-01-<lesson-slug>|<اسم الدرس بالعربي/إنجليزي>]]
-- [ ] [[<topic-slug>-02-<lesson-slug>|...]]
+- [ ] [[01-<topic-slug>-<lesson-slug>|<اسم الدرس بالعربي/إنجليزي>]]
+- [ ] [[02-<topic-slug>-<lesson-slug>|...]]
+- [ ] **مشروع المستوى (Project):** [[NN-<topic-slug>-beginner-project-exercise|اسم المشروع]]
 
 ---
 
 ## المستوى الثاني: متوسط (Intermediate)
-- [ ] [[<topic-slug>-0N-<lesson-slug>|...]]
+- [ ] [[0N-<topic-slug>-<lesson-slug>|...]]
+- [ ] **مشروع المستوى (Project):** [[NN-<topic-slug>-intermediate-project-exercise|اسم المشروع]]
 
 ---
 
 ## المستوى الثالث: متقدم (Advanced)
-- [ ] [[<topic-slug>-0N-<lesson-slug>|...]]
+- [ ] [[0N-<topic-slug>-<lesson-slug>|...]]
+- [ ] **مشروع المستوى (Project):** [[NN-<topic-slug>-advanced-project-exercise|اسم المشروع]]
 
 ---
 
@@ -46,7 +49,7 @@ Tick the checkbox (`- [x]`) when a lesson is completed — this mirrors `<topic-
 
 ---
 
-## lessons/<topic-slug>-NN-<lesson-slug>.md
+## lessons/NN-<topic-slug>-<lesson-slug>.md
 
 ```markdown
 ---
@@ -57,10 +60,15 @@ status: current    # allowed values: current, completed
 tags: [<topic-slug>, lesson, beginner]   # third tag matches the level field above
 aliases: [<optional alternate term, e.g. "Promises" for an async/await lesson>]
 roadmap: "[[<topic-slug>-roadmap]]"
-exercise: "[[<topic-slug>-NN-<lesson-slug>-exercise]]"
+exercise: "[[NN-<topic-slug>-<lesson-slug>-exercise]]"
 ---
 
 # الدرس NN: <عنوان الدرس بالعربي والإنجليزي لو المصطلح إنجليزي، زي "الدرس 3: الـ Array Methods">
+
+> [!tip] ليه ده مهم؟
+> جملة أو اتنين عن الفايدة العملية الحقيقية للمفهوم ده في الشغل، قبل ما ندخل في التفاصيل.
+
+---
 
 <شرح المفهوم — عربي مصري ممزوج بمصطلحات إنجليزية تقنية، أمثلة مناسبة ثقافياً. الكود دايماً إنجليزي بالكامل (تعليقات وأسامي متغيرات) حتى لو الشرح حواليه عربي.>
 
@@ -101,18 +109,24 @@ flowchart LR
 
 ---
 
-جاهز تحل التمرين؟ [[<topic-slug>-NN-<lesson-slug>-exercise|التمرين هنا]]
-```
-
-Use `^key-concept` block references only for the specific line/definition that a later lesson or a spaced-repetition review might need to point back to precisely (link to it via `[[<topic-slug>-NN-<lesson-slug>#^key-concept]]`). Don't add block IDs to every paragraph.
+> [!info] المراجع (References)
+> - [اسم المصدر](الرابط) — وصف قصير ليه فيه
+> - [اسم المصدر التاني](الرابط)
 
 ---
 
-## exercises/<topic-slug>-NN-<lesson-slug>-exercise.md
+جاهز تحل التمرين؟ [[NN-<topic-slug>-<lesson-slug>-exercise|التمرين هنا]]
+```
+
+Use `^key-concept` block references only for the specific line/definition that a later lesson or a spaced-repetition review might need to point back to precisely (link to it via `[[NN-<topic-slug>-<lesson-slug>#^key-concept]]`). Don't add block IDs to every paragraph.
+
+---
+
+## exercises/NN-<topic-slug>-<lesson-slug>-exercise.md
 
 ```markdown
 ---
-lesson: "[[<topic-slug>-NN-<lesson-slug>]]"
+lesson: "[[NN-<topic-slug>-<lesson-slug>]]"
 status: pending   # allowed values: pending, passed, retrying
 attempts: 0
 tags: [<topic-slug>, exercise]
@@ -166,33 +180,68 @@ tags: [<topic-slug>, progress]
 
 # التقدم في <الاسم بالعربي> (<English Name>)
 
-**الدرس الحالي:** [[<topic-slug>-NN-<lesson-slug>|NN - اسم الدرس]]
+**الدرس الحالي:** [[NN-<topic-slug>-<lesson-slug>|NN - اسم الدرس]]
 **آخر تحديث:** <YYYY-MM-DD>
 
 ---
 
 ## الدروس المكتملة
-| # | الدرس | تاريخ الإنجاز | محاولات التمرين |
-|---|-------|----------------|-------------------|
-| 01 | [[<topic-slug>-01-<lesson-slug>]] | YYYY-MM-DD | 1 |
+| # | الدرس | تاريخ الإنجاز | محاولات التمرين | الثقة (1-5) |
+|---|-------|----------------|-------------------|----------------|
+| 01 | [[01-<topic-slug>-<lesson-slug>]] | YYYY-MM-DD | 1 | 4 |
 
 ---
 
 ## جدول المراجعة (Spaced Repetition)
-| الدرس | آخر مراجعة | تاريخ المراجعة الجاية | الفترة الحالية |
-|-------|-------------|--------------------------|------------------|
-| [[<topic-slug>-01-<lesson-slug>]] | YYYY-MM-DD | YYYY-MM-DD | 3 days |
+| الدرس | آخر مراجعة | تاريخ المراجعة الجاية | الفترة الحالية | ملاحظة |
+|-------|-------------|--------------------------|------------------|----------|
+| [[01-<topic-slug>-<lesson-slug>]] | YYYY-MM-DD | YYYY-MM-DD | 3 days | - |
 
 Interval progression on success: 1d -> 3d -> 7d -> 14d -> 30d
 On failed recall: reset to 1d.
+If confidence logged was 1-2 for a lesson, mark "يحتاج مراجعة إضافية" in the ملاحظة column and pull its next review date earlier than the normal interval would suggest — even if the exercise itself was passed correctly.
 
 ---
 
 ## سجل نقاط الضعف (Misconceptions Log)
 | التاريخ | الدرس | الالتباس |
 |---------|--------|-----------|
-| YYYY-MM-DD | [[<topic-slug>-01-<lesson-slug>]] | وصف قصير للمفهوم اللي اتلخبط فيه |
+| YYYY-MM-DD | [[01-<topic-slug>-<lesson-slug>]] | وصف قصير للمفهوم اللي اتلخبط فيه |
 ```
+
+---
+
+## <topic-slug>-glossary.md
+
+```markdown
+---
+topic: <الاسم بالعربي> (<English Name>)
+type: glossary
+updated: <YYYY-MM-DD>
+tags: [<topic-slug>, glossary]
+---
+
+# قاموس مصطلحات <الاسم بالعربي> (<English Name>)
+
+> [!note]
+> كل مصطلح إنجليزي اتشرح لحد دلوقتي، مع تعريف مختصر بالعربي. المصطلح نفسه يفضل إنجليزي دايماً — الشرح بس بالعربي.
+
+---
+
+## <حرف التصنيف، مثلاً A>
+
+**`array`** — [[NN-<topic-slug>-<lesson-slug>|جه في الدرس ده]]
+تعريف مختصر بالعربي للمصطلح.
+
+---
+
+## <حرف تصنيف تاني>
+
+**`closure`** — [[NN-<topic-slug>-<lesson-slug>|جه في الدرس ده]]
+تعريف مختصر بالعربي للمصطلح.
+```
+
+Group entries alphabetically by the English term's first letter (simple `##` sub-headers per letter, as shown) so the file stays easy to scan as it grows. Each entry links back to the lesson where the term was first introduced via wikilink.
 
 ---
 
@@ -210,5 +259,6 @@ On failed recall: reset to 1d.
 | Footnote | `text[^1]` ... `[^1]: the note` |
 | Mermaid diagram | code fence with ```` ```mermaid ```` |
 | Frontmatter alias | `aliases: [alt name 1, alt name 2]` |
+| Code fence language | use the real one: ` ```js `/` ```python `/etc. for code, ` ```bash ` for terminal commands, ` ```text ` for plain output/logs |
 
 Reminder: wikilink values placed **inside YAML frontmatter** must be quoted (`field: "[[file]]"`), otherwise `[[` is parsed as a YAML flow sequence and breaks the file. Wikilinks in the Markdown body (outside frontmatter) do not need quotes.
