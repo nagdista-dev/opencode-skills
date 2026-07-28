@@ -20,6 +20,9 @@ This repository contains drop-in skills for [OpenCode](https://opencode.ai) — 
 | **study-programming** | Interactive programming tutor with spaced repetition, Socratic exercises, and progress tracking | `"teach me Python"`, `"I want to learn React"` |
 | **convert-to-mind-map** | Converts Markdown notes into interactive Obsidian Markmind visual maps | `"convert this folder to a mind map"` |
 | **youtube-summarizer** | Fetches a YouTube transcript (free, no API key) and produces a rich Obsidian note with structured sections, callouts, wikilinks, and actionable takeaways | `"لخصلي الفيديو ده"`, `"summarize this youtube video"` |
+| **article-digest** | Fetches any article by URL and generates a richly-structured Obsidian note with summary, key ideas, critical analysis, quotes, and takeaways | `"لخصلي المقال ده"`, `"summarize this article"` |
+| **post-forge** | Crafts professional LinkedIn posts in a personal voice with storytelling, narrative techniques, and writing craft | `"اكتبلي بوست"`, `"write a linkedin post"` |
+| **vocab-maker** | Builds complete English vocabulary learning cards with Obsidian notes, AI-generated images, and pronunciation audio via edge-tts | `"اعمل كلمة abandon"`, `"make english word procrastinate"` |
 
 ### study-programming
 
@@ -58,7 +61,39 @@ Turns any YouTube video into a beautifully structured Obsidian note using only f
 - Caches transcripts locally to avoid redundant fetches
 - Zero HTML — fully Obsidian-native output
 
+### article-digest
 
+Fetches any article from the internet by URL, extracts its full content, and generates a richly-structured Obsidian Markdown note with summary, key ideas, critical analysis, notable quotes, and actionable takeaways.
+
+**Features:**
+- Full article extraction via `requests` + `BeautifulSoup` (no API key needed)
+- Interactive: asks for URL, save location, language, and style preference
+- 3 summary styles: Quick Brief, Deep Dive, Critical Analysis
+- 3 language options: English, فصيح, عامي مصري
+- Structured output: summary, key ideas, critical analysis, notable quotes, and actionable takeaways
+- Purely local — zero API calls, zero cost, zero tracking
+
+### post-forge
+
+Crafts professional LinkedIn posts in the personal voice of Mahmoud Elnagdy. Uses advanced storytelling, narrative techniques, and writing craft to produce posts that stop the scroll and hold attention.
+
+**Features:**
+- Interactive: asks about topic, language, and tone before writing
+- Multiple post styles: Storytelling, Educational, Opinion, Personal Update
+- Language options: English, عامي مصري, فصيح
+- Uses hooks, narrative arcs, pattern interrupts, and social-proof anchors
+- Optimized for LinkedIn algorithm engagement
+
+### vocab-maker
+
+Builds complete English vocabulary learning cards — an Obsidian note with definition, situation, example, IPA, and Egyptian-dialect notes — plus AI-generated image and pronunciation audio via edge-tts.
+
+**Features:**
+- One card per word: definition, example, IPA transcription, Egyptian-dialect usage notes
+- AI-generated illustrative image via Gemini API
+- Pronunciation + example sentence audio via `edge-tts`
+- Batch mode: process multiple words at once
+- All files saved directly into your Obsidian vault
 
 ```bash
 cd ~/.config/opencode/skills/
