@@ -19,10 +19,10 @@ This repository contains drop-in skills for [OpenCode](https://opencode.ai) — 
 |-------|-------------|----------|
 | **study-programming** | Interactive programming tutor with spaced repetition, Socratic exercises, and progress tracking | `"teach me Python"`, `"I want to learn React"` |
 | **convert-to-mind-map** | Converts Markdown notes into interactive Obsidian Markmind visual maps | `"convert this folder to a mind map"` |
-| **youtube-summarizer** | Fetches a YouTube transcript (free, no API key) and produces a rich Obsidian note with structured sections, callouts, wikilinks, and actionable takeaways | `"لخصلي الفيديو ده"`, `"summarize this youtube video"` |
-| **article-digest** | Fetches any article by URL and generates a richly-structured Obsidian note with summary, key ideas, critical analysis, quotes, and takeaways | `"لخصلي المقال ده"`, `"summarize this article"` |
-| **post-forge** | Crafts professional LinkedIn posts in a personal voice with storytelling, narrative techniques, and writing craft | `"اكتبلي بوست"`, `"write a linkedin post"` |
-| **vocab-maker** | Builds complete English vocabulary learning cards with Obsidian notes, AI-generated images, and pronunciation audio via edge-tts | `"اعمل كلمة abandon"`, `"make english word procrastinate"` |
+| **youtube-summarizer** | Fetches a YouTube transcript (free, no API key) and produces a rich Obsidian note with structured sections, callouts, wikilinks, and actionable takeaways | `"summarize this youtube video"` |
+| **article-digest** | Fetches any article by URL and generates a richly-structured Obsidian note with summary, key ideas, critical analysis, quotes, and takeaways | `"summarize this article"` |
+| **post-forge** | Crafts professional LinkedIn posts in a personal voice with storytelling, narrative techniques, and writing craft | `"write a linkedin post"` |
+| **vocab-maker** | Builds complete English vocabulary learning cards with Obsidian notes, AI-generated images, and pronunciation audio via edge-tts | `"make english word procrastinate"` |
 
 ### study-programming
 
