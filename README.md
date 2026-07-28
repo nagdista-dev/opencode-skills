@@ -19,6 +19,7 @@ This repository contains drop-in skills for [OpenCode](https://opencode.ai) — 
 |-------|-------------|----------|
 | **study-programming** | Interactive programming tutor with spaced repetition, Socratic exercises, and progress tracking | `"teach me Python"`, `"I want to learn React"` |
 | **convert-to-mind-map** | Converts Markdown notes into interactive Obsidian Markmind visual maps | `"convert this folder to a mind map"` |
+| **youtube-summarizer** | Fetches a YouTube transcript (free, no API key) and produces a rich Obsidian note with structured sections, callouts, wikilinks, and actionable takeaways | `"لخصلي الفيديو ده"`, `"summarize this youtube video"` |
 
 ### study-programming
 
@@ -43,7 +44,21 @@ Reads existing Markdown notes from any folder and produces ready-to-open [Markmi
 - Produces `.md` files with `mindmap-plugin: basic` frontmatter
 - Human-readable, bidirectional, zero manual work
 
-## Installation
+### youtube-summarizer
+
+Turns any YouTube video into a beautifully structured Obsidian note using only free tools — no API key, no signup.
+
+**Features:**
+- Fetches transcript automatically via `youtube-transcript-api` (supports manual and auto-generated captions)
+- Fetches video metadata (title, channel, duration) via `yt-dlp`
+- Interactive: asks for URL, save location, summary language, summary style, and emoji preference
+- 4 summary styles: Quick Brief, Deep Dive, Study Notes, Action Plan
+- 4 language options: English, فصيح, عامي مصري, Bilingual
+- Pure Markdown + Obsidian features: callouts, wikilinks, highlights, checkboxes, frontmatter
+- Caches transcripts locally to avoid redundant fetches
+- Zero HTML — fully Obsidian-native output
+
+
 
 ```bash
 cd ~/.config/opencode/skills/

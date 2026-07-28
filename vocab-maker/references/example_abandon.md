@@ -65,16 +65,39 @@ prompt: the word is Abandon, square image, 1:1 aspect ratio. An Egyptian man sta
 
 ## Abandon Notes
 
-| العنصر | التفاصيل |
-|--------|----------|
-| بالعامية | أسيبه، أرميه |
-| امتى بتتقال | لما حد يسيب شغله أو يسيب صاحبه ويمشي |
-| أمثلة شائعة | She decided to abandon her plans for the weekend.<br>The soldier had to abandon his post during the battle. |
-| تركيب الجملة | abandon + something/someone |
-| مرادفات | leave, desert, forsake, give up |
-| antonyms | keep, maintain, retain, hold on to |
-| أخطاء شائعة | بتتقال غالبًا مع حاجة ملموسة أو موقف، مش مع حاجات معنوية زي hope في الكلام اليومي |
-| ملاحظات مهمة | كلمة قوية عاطفيًا — معناها إنك بتسيب حاجة بالكامل وخلاص، مش مجرد تأجيل |
+### بالعامية المصرية
+أسيبه، أرميه
+
+### إمتى بتتقال؟
+لما حد يسيب شغله أو يسيب صاحبه ويمشي
+
+### أمثلة شائعة
+
+```text
+She decided to abandon her plans for the weekend.
+```
+
+```text
+The soldier had to abandon his post during the battle.
+```
+
+### مرادفات (Synonyms)
+
+```text
+leave, desert, forsake, give up
+```
+
+### أضداد (Antonyms)
+
+```text
+keep, maintain, retain, hold on to
+```
+
+### أخطاء شائعة
+بتتقال غالبًا مع حاجة ملموسة أو موقف، مش مع حاجات معنوية زي hope في الكلام اليومي
+
+### ملاحظات مهمة
+كلمة قوية عاطفيًا — معناها إنك بتسيب حاجة بالكامل وخلاص، مش مجرد تأجيل
 
 ![[Abandon.jpeg]]
 ```
